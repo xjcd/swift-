@@ -1,1 +1,135 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+//var str = "Hello, playground"
+
+
+/**
+let #常量
+var #变量
+
+ 
+ 
+ **/
+
+/*
+var num = 10
+print(num)
+
+var age: Int = 40
+print(age)
+
+if age>34 && age < 50{
+    print("哈哈哈")
+}else {
+    print("呵呵呵")
+}
+
+switch age {
+case 10:
+    print("10")
+    case 40:
+    print("40")
+default:
+    print("other   ")
+}
+
+var shopArray = ["no1","no2","no3","2"]
+print(shopArray[3])
+
+for var everyOneString in shopArray {
+    print("====== 打印的数组", everyOneString)
+}
+let dic = ["1":21,"2":22]
+print(" ====== 字典",dic["1"])
+
+print("=================================================================")
+
+let num1 = "10"
+let num2:Float = 15.5
+let num3 = num1 + "\(num2)"
+print("打印:字符转换:",num3)
+
+let defaultArray = [Int]()
+print("打印:空字符串----",defaultArray)
+
+func creatAction(age:String,sex:Bool)->(Void) {
+    
+    var tempAge = age + "先生";
+    
+    print(tempAge,"是",sex)
+}
+    creatAction(age: "xiaojing", sex: true)
+*/
+
+
+//func crkbbknknbdjhbajfbajbfjbjh(canshu1:String,canshu2:Float) ->(String){
+//    let str: String = "33333";
+//    print(str)
+//    return str;
+//}
+//
+//crkbbknknbdjhbajfbajbfjbjh(canshu1: "2222", canshu2: 2.84948948494 )
+
+
+//func getAvalue(numbers:Int...) -> (Int){
+//    var tempValue :Int = 1;
+//    for tempNum:Int in numbers {
+//        tempValue += tempNum
+//    }
+//    let returnValue = tempValue/numbers.count;
+//    print(returnValue)
+//    nizaishuoshenm()
+//    return returnValue;
+//}
+//func nizaishuoshenm() {
+//    print("加载数据")
+//}
+// getAvalue(numbers:8,6,13,1)
+
+
+func makeIncrementer() -> ((Int) -> Int) {
+    
+    func addOne(number: Int) -> Int {
+        return 1 + 4 + number
+    }
+    var test2: Int = addOne(number:1)
+    
+    return addOne
+}
+print(makeIncrementer()(4))
+
+
+
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        } }
+    return false
+}
+func lessThanTen(number: Int) -> Bool {
+    return number < 3
+}
+var numbers = [20, 19, 7, 2]
+
+print(hasAnyMatches(list: numbers, condition: lessThanTen))
+
+
+
+
+    var tempClassInt :String = "3ee"
+    
+    func tempAction(tempstr :String) -> (String) {
+        return tempstr
+    }
+
+    var ssss :String = tempAction(tempClassInt)
+
+    print(ssss)
+
+
+    
+
 
